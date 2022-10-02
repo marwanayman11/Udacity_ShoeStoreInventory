@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Shoe Store Inventory</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tvEmail">Email</string>
+    <string name="email_hint">Enter your email</string>
+    <string name="password_hint">Enter your password</string>
+    <string name="etPasswordId">Password</string>
+    <string name="tvPassword">Password</string>
+    <string name="logo">Logo</string>
+    <string name="login_text">Login</string>
+    <string name="login_with_an_existing_email">Login with an existing email</string>
+    <string name="welcome_to_your_home">Welcome to your home</string>
+    <string name="deal_with">This app will help you to deal with our shoe store inventory</string>
+    <string name="skip">Skip</string>
+    <string name="instructions">Instructions</string>
+    <string name="instructions2">To add a new shoe click on FloatingActionButton in shoe listing screen</string>
+    <string name="add_a_new_shoe">add a new shoe</string>
+    <string name="shoe_name">Shoe Name</string>
+    <string name="enter_shoe_name">Enter shoe name</string>
+    <string name="shoe_company">Shoe Company</string>
+    <string name="enter_shoe_company">Enter shoe company</string>
+    <string name="shoe_size">Shoe Size</string>
+    <string name="enter_shoe_size">Enter shoe size</string>
+    <string name="description">Description</string>
+    <string name="enter_shoe_description">Enter shoe description</string>
+    <string name="save_button">save</string>
+    <string name="cancel_button">cancel</string>
+    <string name="logout">Logout</string>
+    <string name="name">Name</string>
+    <string name="company">Company</string>
+    <string name="size">Size</string>
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.shoestoreinventory.login.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment"
+            app:enterAnim="@anim/fade_in"
+            app:popUpTo="@id/navigation"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.shoestoreinventory.welcome.WelcomeFragment"
+        android:label="Welcome" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_instructionsFragment2"
+            app:destination="@id/instructionsFragment"
+            app:enterAnim="@anim/fade_in"
+            app:popUpTo="@id/navigation"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/instructionsFragment"
+        android:name="com.example.shoestoreinventory.instructions.InstructionsFragment"
+        android:label="Instructions" >
+        <action
+            android:id="@+id/action_instructionsFragment_to_shoeListingFragment"
+            app:destination="@id/shoeListingFragment"
+            app:enterAnim="@anim/fade_in"
+            app:popUpTo="@id/navigation"
+            app:popUpToInclusive="true">
+            <argument android:name="name" />
+            <argument android:name="company" />
+            <argument android:name="size" />
+            <argument android:name="description" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/shoeListingFragment"
+        android:name="com.example.shoestoreinventory.shoeListing.ShoeListingFragment"
+        android:label="Shoe listing"
+        tools:layout="@layout/fragment_shoe_listing" >
+        <action
+            android:id="@+id/action_shoeListingFragment_to_shoeDetailFragment"
+            app:destination="@id/shoeDetailFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_shoeListingFragment_to_loginFragment2"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/fade_out"
+            app:popUpTo="@id/navigation"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/shoeDetailFragment"
+        android:name="com.example.shoestoreinventory.shoeDetail.ShoeDetailFragment"
+        android:label="Shoe detail" >
+
+        <action
+            android:id="@+id/action_shoeDetailFragment_to_shoeListingFragment"
+            app:destination="@id/shoeListingFragment"
+            app:popUpTo="@id/navigation"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>
